@@ -157,3 +157,10 @@ df.head(5)
 
 La libreria `sqlalchemy` también soporta PostgreSQL y otras fuentes de datos.
 
+## Ventajas y desventajas de los formatos de importar y guardado
+
+- **CSV** - Es muy versatil ya que solo tiene comas y saltos de linea
+- **JSON** - Tiene un formato muy similar al de un diccionario de Python
+- **Excel** - Permite guardar el archivo en formato .xls para trabajar con el en Excel o Spreadsheets
+- **Pickle** - Permite comprimir la información, es util cuando se tienen tablas grandes
+- **Parquet** - Permite darle un formato que puede usarse en ambientes de Big Data como Hadoop
