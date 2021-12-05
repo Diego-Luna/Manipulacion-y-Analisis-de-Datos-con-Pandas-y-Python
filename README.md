@@ -164,3 +164,13 @@ La libreria `sqlalchemy` también soporta PostgreSQL y otras fuentes de datos.
 - **Excel** - Permite guardar el archivo en formato .xls para trabajar con el en Excel o Spreadsheets
 - **Pickle** - Permite comprimir la información, es util cuando se tienen tablas grandes
 - **Parquet** - Permite darle un formato que puede usarse en ambientes de Big Data como Hadoop
+
+## Formatos de lectura para cargar y guardar DataFrames
+
+- **CSV y formatos String** : Son simples, requieren alto costo computacional y algo lentos.
+
+- **HDF** : Gran soporte, adecuado para grandes cantidades de datos, rápido a costo de alto costo computacional.
+
+- **Parquet** : Puede igualar a hdf e inclusive trabajar por chunks y en paralelo.
+
+- **Pickle** : Es práctico pero lento con grandes cantidades de datos.
