@@ -174,3 +174,12 @@ La libreria `sqlalchemy` también soporta PostgreSQL y otras fuentes de datos.
 - **Parquet** : Puede igualar a hdf e inclusive trabajar por chunks y en paralelo.
 
 - **Pickle** : Es práctico pero lento con grandes cantidades de datos.
+
+## Fixing a data type
+
+- **object** -> Python strings (or other Python objects)
+- **bool** -> enables logical and mathematical operations
+- **int** -> mathematical operations can be performed
+- **float** -> mathematical operations can be performed
+- **category** -> results in less memory usage and faster processing
+- **datetime** -> enables a rich set of date-based attributes and methods
