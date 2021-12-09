@@ -186,3 +186,14 @@ La libreria `sqlalchemy` también soporta PostgreSQL y otras fuentes de datos.
 - **float** -> mathematical operations can be performed
 - **category** -> results in less memory usage and faster processing
 - **datetime** -> enables a rich set of date-based attributes and methods
+
+## Funciones más complejas y lambdas
+
+Además de apply, también se pueden usar las funciones applymap y map, dependiendo de la necesidad.
+
+- `apply()` se utiliza para aplicar una función a lo largo de un eje (columna o fila).
+- `applymap()` se usa para aplicar una función a todos los elementos del DataFrame
+- `map()` se usa para sustituir cada valor de una fila por otro valor.
+  Un ejemplo del uso de map() sería:
+
+![imgs time](./imgs/img_1.png)
