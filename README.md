@@ -2,6 +2,7 @@
 
 [Dataset Search](https://datasetsearch.research.google.com/)
 [kaggle.com](https://www.kaggle.com/)
+[World Bank Open Data](https://data.worldbank.org/)
 
 ## 10 minutes to pandas
 
