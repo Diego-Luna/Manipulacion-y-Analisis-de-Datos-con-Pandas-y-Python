@@ -977,3 +977,11 @@ df.drop_duplicates(['a'],keep='last')
 9	z	4
 10	v	5
 ```
+
+## Aggregation y groupby
+
+Un tema que vale la pena tener en cuenta es que la función value_counts por defecto ignora los valores ausentes, para tomarlos en cuenta se puede añadir dropna=False
+
+```python
+df['day'].value_counts(dropna=False)
+```
