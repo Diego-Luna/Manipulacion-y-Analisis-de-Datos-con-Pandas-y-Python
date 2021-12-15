@@ -985,3 +985,34 @@ Un tema que vale la pena tener en cuenta es que la función value_counts por def
 ```python
 df['day'].value_counts(dropna=False)
 ```
+
+## Group By: extraer valor con variables categóricas
+
+- **groupby**: para aplicar una función a un conjunto de datos. Se puede usar de varias formas
+
+1. Forma simple
+
+```python
+df.groupby('column1').function
+```
+
+Donde function puede ser: mean(), median(), etc. En este sentido, Pandas tomará a ‘column1’ como índice y al resto del dataframe le aplicará la función definida.
+
+1. Con funciones lambdas o auxiliares
+
+Donde some_function pueden ser funciones lambdas u otras que hayamos definido. En esta operación, Pandas tomará a ‘column1’ como índice y las columnas serán el resultado de aplicar some_function sobre ‘column2’ y ‘column3’.
+
+Nota: también pueden tomarse varias columnas como índices escribiendolas en una lista.
+
+- aggregate (o agg): para aplicar más de una función. La sintaxis de esta función sigue la misma lógica que la de groupby, solo que se añade ‘agg’ (o ‘aggregate’) al final de la sentencia con una lista de funciones a aplicar. Ejemplos:
+
+```python
+df.groupby('column1').agg([np.mean,np.max])
+
+df.groupby(['column1','column2'])[['column3','column4']].aggregate([np.mean,np.max])
+```
+
+De igual manera, Pandas realizará lo siguiente:
+
+- tomará como índice las columnas que esten entre paréntesis.
+- tomará como columnas el resultado de aplicar las funciones especificadas en ‘aggregate’ a la lista de columnas entre corchetes.
