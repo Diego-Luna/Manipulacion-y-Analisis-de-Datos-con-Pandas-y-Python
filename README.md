@@ -1016,3 +1016,18 @@ De igual manera, Pandas realizará lo siguiente:
 
 - tomará como índice las columnas que esten entre paréntesis.
 - tomará como columnas el resultado de aplicar las funciones especificadas en ‘aggregate’ a la lista de columnas entre corchetes.
+
+## Tablas dinámicas con Pivot Table
+
+Queria ver como son las propinas de hombres vs mujeres cada dia.
+
+```python
+df_valores = df.pivot_table(values='total_bill', index=['sex', 'day', 'smoker'], columns=['time'], aggfunc=[np.mean, np.median, np.max])
+df_valores
+```
+
+Luego llenar los valores nulos con 0.
+
+```python
+df_valores.fillna(0)
+```
