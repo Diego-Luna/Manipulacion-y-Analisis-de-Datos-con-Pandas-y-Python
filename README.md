@@ -1031,3 +1031,22 @@ Luego llenar los valores nulos con 0.
 ```python
 df_valores.fillna(0)
 ```
+
+Algunas opciones de resample
+
+| Alias  | Description           |
+| ------ | --------------------- |
+| B      | Business day          |
+| D      | Calendar day          |
+| W      | Weekly                |
+| M      | Month end             |
+| Q      | Quarter end           |
+| A      | Year end              |
+| BA     | Business year end     |
+| AS     | Year start            |
+| H      | Hourly frequency      |
+| T, min | Minutely frequency    |
+| S      | Secondly frequency    |
+| L, ms  | Millisecond frequency |
+| U, us  | Microsecond frequency |
+| N, ns  | Nanosecond frequency  |
