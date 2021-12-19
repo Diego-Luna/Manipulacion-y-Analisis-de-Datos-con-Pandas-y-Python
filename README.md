@@ -1052,3 +1052,5 @@ Algunas opciones de resample
 | N, ns  | Nanosecond frequency  |
 
 ## Visualización y graficación de datos
+
+## Preprocesamiento de datos: terminando de preparar y limpiar los datasets
