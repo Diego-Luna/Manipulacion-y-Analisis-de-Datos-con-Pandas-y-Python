@@ -1050,3 +1050,5 @@ Algunas opciones de resample
 | L, ms  | Millisecond frequency |
 | U, us  | Microsecond frequency |
 | N, ns  | Nanosecond frequency  |
+
+## Visualización y graficación de datos
